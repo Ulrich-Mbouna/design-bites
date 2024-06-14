@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url('fonts/Poppins-Regular.woff') format('woff');
+  font-family: 'Poppins';
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/Montserrat-Regular.eot') format('eot');
+  src:
+          url('fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+          url("fonts/Montserrat/Montserrat-Regular.woff2") format('woff2'),
+          url('fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+          url("fonts/Montserrat/Montserrat-Bold.woff2") format('woff2')
+}
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url('fonts/Montserrat/Montserrat-ExtraBold.eot') format('eot');
+  src:
+          url('fonts/Montserrat/Montserrat-ExtraBold.woff') format('woff'),
+          url("fonts/Montserrat/Montserrat-ExtraBold.woff2") format('woff2')
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('fonts/Montserrat/Montserrat-ExtraBold.eot') format('eot');
+  src:
+          url('fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+          url("fonts/Montserrat/Montserrat-Bold.woff2") format('woff2')
+}
+html {
+  font-family: 'Poppins' ,"sans-serif";
+  font-size: 15px ;
+  line-height: 1.55 ;
+  font-weight:300
+}
+
+.uk-nav-primary a{
+  font-size: 19px;
+}
+.uk-heading-medium {
+  font-size: 43.875px;
+  line-height: 1.1;
+  font-family: "Montserrat Bold", "sans-serif" !important;
+  font-weight: 700;
+  letter-spacing: -.05rem;
+}
+.uk-heading-xlarge {
+  font-size: 56.7px;
+  line-height: 1;
+  font-family: "Montserrat Bold", "sans-serif" !important;
+  font-weight: 700;
+  letter-spacing: -.05rem;
+}
+.uk-navbar-nav>li>a {
+  font-weight: 500;
+  font-size: 15px;
+}
+.uk-text-large {
+  font-size: 24px;
+}
+@media (min-width: 1200px) {
+  .uk-heading-medium {
+    font-size:72px
+  }
+
+  .uk-heading-large {
+    font-size: 95px
+  }
+
+  .uk-heading-xlarge {
+    font-size: 115px;
+  }
+
+  .uk-heading-2xlarge {
+    font-size: 148px
+  }
+
+  .uk-heading-3xlarge {
+    font-size: 15rem
+  }
+}
+
+.uk-navbar-nav li a {
+  @apply text-cusgray relative z-10 tracking-normal;
+}
+.uk-navbar-nav li a:hover::before {
+  @apply right-0 bg-primary
+}
+.uk-navbar-nav li a:before{
+  @apply
+  block absolute -z-10 bottom-[22px]
+  h-0.5 content-[''] bg-transparent transition-all
+  duration-300 ease-in-out right-full left-0
+}
+
+.uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,.uk-heading-2xlarge,.uk-heading-3xlarge,.uk-heading-large,.uk-heading-medium,.uk-heading-small,.uk-heading-xlarge,h1,h2,h3,h4,h5,h6 {
+  /*margin: 0 0 20px 0;*/
+  /* font-family:Poppins; */
+  font-weight: 400;
+  color: #333;
+  text-transform: none;
+  letter-spacing: -.05rem
+}
+
+*+.uk-h1,*+.uk-h2,*+.uk-h3,*+.uk-h4,*+.uk-h5,*+.uk-h6,*+.uk-heading-2xlarge,*+.uk-heading-3xlarge,*+.uk-heading-large,*+.uk-heading-medium,*+.uk-heading-small,*+.uk-heading-xlarge,*+h1,*+h2,*+h3,*+h4,*+h5,*+h6 {
+  margin-top: 40px
+}
+
+.uk-h1,h1 {
+  font-size: 37.4px;
+  line-height: 1.2;
+  /* font-family:Montserrat; */
+  font-weight: 700
+}
+
+.uk-h2,h2 {
+  font-size: 27.2px;
+  line-height: 1.3;
+  font-weight: 700
+}
+
+.uk-h3,h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700
+}
+
+.uk-h4,h4 {
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 700
+}
+
+.uk-h5,h5 {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0
+}
+
+.uk-h6,h6 {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0
+}
+
+@media (min-width: 960px) {
+  .uk-h1,h1 {
+    font-size:44px
+  }
+
+  .uk-h2,h2 {
+    font-size: 32px
+  }
+}
+.uk-font-primary {
+  font-family: 'Montserrat ExtraBold', serif;
+  font-weight: 700;
+}
+.uk-card-media-top, .uk-grid-stack>.uk-card-media-left, .uk-grid-stack>.uk-card-media-right {
+  border-radius: 8px 8px 0 0;
+}
+
+[class*="uk-card-media"] {
+  overflow: hidden;
+}
+.uk-card{
+  border-radius: 8px;
+}
+.uk-card-default {
+  background-color: #fff;
+}
+/*[class*=uk-width] {*/
+/*  box-sizing: border-box;*/
+/*  width: 100%;*/
+/*  max-width: 100%;*/
+/*}*/
+.uk-light{
+  @apply text-white/80
+}
+.uk-card-default.uk-card-hover:hover {
+  background-color: #fff;
+}
+.uk-tile-secondary:not(.uk-preserve-color) .uk-input {
+  background-color: rgba(255, 255, 255, .16);
+  color: rgba(255, 255, 255, .8);
+  background-clip: padding-box;
+}
+.uk-input, .uk-select:not([multiple]):not([size]) {
+  height: 46px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #f2f2f2;
+  border-radius: 4px;
+  overflow: visible;
+}
+.uk-tile-secondary:not(.uk-preserve-color) .uk-button-default {
+  background-color: #fff;
+  color: #333;
+  box-shadow: none;
+  border-radius: 4px;
+  line-height: 46px;
+}

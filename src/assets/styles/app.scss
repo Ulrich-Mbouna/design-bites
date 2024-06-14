@@ -1,0 +1,21 @@
+$primary-color: #e4336a;
+$secondary-color: #1c5bea;
+$font-size: 15px;
+
+
+$global-font-family: "Poppins";
+$button-primary-background: $primary-color;
+$global-font-size: $font-size;
+$text-primary-color: $primary-color;
+$text-secondary-color: $secondary-color;
+$base-heading-font-family: 'Montserrat Bold';
+$global-secondary-background: $secondary-color;
+
+
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+@mixin hook-button() {
+  @apply rounded-md font-bold
+}
+@import "uikit/src/scss/uikit-theme.scss";
